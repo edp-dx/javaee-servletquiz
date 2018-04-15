@@ -11,7 +11,6 @@ public class AddQ extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();       
-      //  int i=0;
         String  q1=request.getParameter("q1");
         String  q2=request.getParameter("q2");
         String  q3=request.getParameter("q3");
@@ -32,30 +31,14 @@ public class AddQ extends HttpServlet {
         String  a8=request.getParameter("a8");
         String  a9=request.getParameter("a9");
         String  a10=request.getParameter("a10");
-      //  String  email=request.getParameter("email");
-      //  String  pass=request.getParameter("pass");
-      //  System.out.println(name);
-     //   System.out.println(email);
         System.out.println(q1);
         System.out.println(q2);
-
-       // --------------------------------------------------------------------------------
-      //  Part photo =  request.getPart("photo");
-
         try{
-        
-        //loading drivers for mysql
         Class.forName("oracle.jdbc.driver.OracleDriver");
-
-	//creating connection with the database 
           Connection  con=DriverManager.getConnection
                      ("jdbc:oracle:thin:@localhost:1521:xe","hr","hr");
-         // resultSet = null;
         PreparedStatement ps1=con.prepareStatement
                   ("insert into quiz(questions,answers) values(?,?)");
-        		//("update student set name=? where email='esg' ");
-        		//("select * from student where name='1'");
-
         ps1.setString(1, q1);
         ps1.setString(2, a1);
         PreparedStatement ps2=con.prepareStatement
@@ -94,10 +77,6 @@ public class AddQ extends HttpServlet {
                 ("insert into quiz(questions,answers) values(?,?)");
         ps10.setString(1, q10);
         ps10.setString(2, a10);
-       // ps.setString(2, email);
-       // ps.setString(3, pass);
-       // ps.setBinaryStream(4, photo.getInputStream(), (int)  photo.getSize());
-       // int i=ps.executeUpdate();
         ps1.executeUpdate();
         ps2.executeUpdate();
         ps3.executeUpdate();
@@ -109,23 +88,9 @@ public class AddQ extends HttpServlet {
         ps9.executeUpdate();
         ps10.executeUpdate();
         
-      //  resultSet = ps.executeQuery();
-  
-		//while(resultSet.next())
-		//{
-		//System.out.println(resultSet.getString("email"));
-		//System.out.println(resultSet.getString("pass"));
-		// i=i+1;
-	//	}
-	//	System.out.println("Retrived Successfully"+i);
-        
-        
-        
-         // if(i>0)
-         // {
+
             out.println("Success : Inserted");
-         // }
-        
+    
         }
         catch(Exception se)
         {
