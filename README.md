@@ -9,4 +9,5 @@ This application lets user to enter 10 questions and answers of their choice and
 
 This application is more suitable to create "True" or "False" kind of quiz.
 
-![2](https://user-images.githubusercontent.com/37608167/38775172-aefa4c14-4049-11e8-9011-b47003e1a1b8.jpg)
+![image](https://user-images.githubusercontent.com/37608167/38775188-1c01d354-404a-11e8-8850-6a4f71fba3ef.png)
+
