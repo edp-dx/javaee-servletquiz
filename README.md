@@ -8,3 +8,5 @@ Step 2: Import Project folder into eclipse and run .war file.
 This application lets user to enter 10 questions and answers of their choice and then attend the quiz.
 
 This application is more suitable to create "True" or "False" kind of quiz.
+
+![2](https://user-images.githubusercontent.com/37608167/38775172-aefa4c14-4049-11e8-9011-b47003e1a1b8.jpg)
