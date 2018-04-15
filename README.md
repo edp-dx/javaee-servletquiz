@@ -11,5 +11,7 @@ This application is more suitable to create "True" or "False" kind of quiz.
 
 ![image](https://user-images.githubusercontent.com/37608167/38775188-1c01d354-404a-11e8-8850-6a4f71fba3ef.png)
 ![image](https://user-images.githubusercontent.com/37608167/38775195-6a74e210-404a-11e8-8272-70d874e4957a.png)
-![image](https://user-images.githubusercontent.com/37608167/38775260-ea3bc486-404b-11e8-8e41-21983c661998.png)
+![image](https://user-images.githubusercontent.com/37608167/38775266-10b43670-404c-11e8-99a0-a8b3cb0f6750.png)
+![image](https://user-images.githubusercontent.com/37608167/38775278-4e14fe82-404c-11e8-96f4-d301def7af7e.png)
+
 
